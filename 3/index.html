@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Interactive Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Responsive Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Welcome to My Website</h2>
+            <p>This is a responsive webpage with interactive elements.</p>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </section>
+
+        <section id="features">
+            <div class="card">
+                <h3>Feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="expand-btn" data-target="feature1">Learn More</button>
+                <div id="feature1" class="hidden">
+                    <p>Additional information about Feature 1 that appears when button is clicked.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Feature 2</h3>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="expand-btn" data-target="feature2">Learn More</button>
+                <div id="feature2" class="hidden">
+                    <p>Additional information about Feature 2 that appears when button is clicked.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Feature 3</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <button class="expand-btn" data-target="feature3">Learn More</button>
+                <div id="feature3" class="hidden">
+                    <p>Additional information about Feature 3 that appears when button is clicked.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
